@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    // Part 00 - MainPage
+    <color name="colorPrimary_MainPage">#313131</color>
+    <color name="colorPrimaryDark_MainPage">#1C1C1C</color>
+    <color name="colorAccent_MainPage">#FEF5E0</color>
+    <color name="colorCardViewBg">#4A4C4A</color>
+
+    // Part 01 - EBook
+    <color name="colorPrimary_EBook">#AAD3F6</color>
+    <color name="colorPrimaryDark_EBook">#020625</color>
+    <color name="colorAccent_EBook">#5e4e37</color>
+
+    <color name="text_color_EBook">#020622</color>
+    <color name="color_other_background">#FFFFFF</color>
+
+    <color name="colorPrimary_EBook_night">#AAD3F6</color>
+    <color name="colorPrimaryDark_EBook_night">#020625</color>
+    <color name="colorAccent_EBook_night">#218EED</color>
+
+
+    // Part 02 - Food
+    <color name="colorAccent_Food">#FDCF05</color>
+    <color name="textColor_Food">#020932</color>
+    <color name="backGroundColor_Food">#FDD7D7</color>
+    <color name="backGroundColor_Food_Other">#FFFFFF</color>
+
+
+    // Part 03 - Music
+    <color name="text_color_music">#ffffff</color>
+    <color name="background_music">#0D0123</color>
+    <color name="colorPrimaryDark_Music">#090019</color>
+    <color name="colorAccent_Music">#FDD835</color>
+
+
+    // Part 04 - Wallpaper
+    <color name="background_wallpaper">#080117</color>
+    <color name="colorPrimaryDark_wallpaper">#17011c</color>
+    <color name="colorAccent_wallpaper">#FFD000</color>
+    <color name="textColor_wallpaper">#ffffff</color>
+    <color name="otherColor_wallpaper">#050b2e</color>
+    
+</resources>

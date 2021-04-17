@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MaterialDesign" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    // Part 00 - MainPage
+    <style name="AppTheme_MainPage" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_MainPage</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_MainPage</item>
+        <item name="colorAccent">@color/colorAccent_MainPage</item>
+        <item name="android:statusBarColor">@color/colorPrimary_MainPage</item>
+        <item name="android:navigationBarColor">#1C1C1C</item>
+    </style>
+
+    // Part 01 - EBook
+    <style name="AppTheme_EBook" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_EBook_night</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_EBook_night</item>
+        <item name="colorAccent">#8A7B7B</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/colorAccent_EBook</item>
+    </style>
+
+
+    // Part 02 - Food
+    <style name="AppTheme_Food" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_EBook</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_EBook</item>
+        <item name="colorAccent">@color/colorAccent_EBook</item>
+        <item name="android:statusBarColor">@android:color/holo_red_dark</item>
+        <item name="android:navigationBarColor">@android:color/holo_red_dark</item>
+    </style>
+
+
+    // Part 03 - Music
+    <style name="AppTheme_Music" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/background_music</item>
+        <item name="colorPrimaryVariant">@color/colorAccent_Music</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Music</item>
+        <item name="colorAccent">@color/colorAccent_Music</item>
+        <item name="android:statusBarColor">@color/background_music</item>
+        <item name="android:fontFamily">@font/font_music</item>
+        <item name="fontFamily">@font/font_music</item>
+    </style>
+
+    // Part 04 - Wallpaper
+    <style name="AppTheme_Wallpaper" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/background_wallpaper</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_wallpaper</item>
+        <item name="colorAccent">@color/colorAccent_wallpaper</item>
+        <item name="android:statusBarColor">@color/background_wallpaper</item>
+        <item name="android:navigationBarColor">@color/background_wallpaper</item>
+    </style>
+
+</resources>

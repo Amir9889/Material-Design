@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@color/background_wallpaper"
+    tools:context=".part04.fragments.HomeWallpaperFragment">
+
+    <ScrollView
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:id="@+id/txt_new"
+                    android:textColor="@color/textColor_wallpaper"
+                    android:text="جدید ترین ها : "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAccent_wallpaper"
+                    android:layout_alignParentLeft="true"
+                    android:text="همه"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recyclerView_new"
+                    android:layout_below="@id/txt_new"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_below="@id/recyclerView_new"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/txt_category"
+                    android:textColor="@color/textColor_wallpaper"
+                    android:text="دسته بندی ها : "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_below="@id/recyclerView_new"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/colorAccent_wallpaper"
+                    android:layout_alignParentLeft="true"
+                    android:text="همه"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recyclerView_category"
+                    android:layout_below="@id/txt_category"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_below="@id/recyclerView_category"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/txt_popular"
+                    android:textColor="@color/textColor_wallpaper"
+                    android:text="محبوب ترین ها :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_below="@id/recyclerView_category"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/colorAccent_wallpaper"
+                    android:layout_alignParentLeft="true"
+                    android:text="همه"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginBottom="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recyclerView_popular"
+                    android:layout_below="@id/txt_popular"
+                    android:layout_marginTop="8dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

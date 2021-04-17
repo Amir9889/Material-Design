@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:id="@+id/parent_bottom_sheet"
+    android:layoutDirection="rtl"
+    android:background="@drawable/bg_parent_bottom_sheet">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt"
+        android:textColor="@color/text_color_EBook"
+        android:text="جزئیات سفارش"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_color_EBook"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="8dp"
+        android:id="@+id/view_bottom_sheet"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_img"
+        android:layout_width="75dp"
+        android:layout_height="115dp"
+        android:layout_below="@id/view_bottom_sheet"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/img_bottom_sheet"
+                android:scaleType="centerCrop"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_EBook"
+        android:layout_below="@id/view_bottom_sheet"
+        android:layout_toLeftOf="@id/card_img"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="12dp"
+        android:id="@+id/txt_name_book"
+        android:text="اسم کتاب"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_color_EBook"
+        android:layout_below="@id/txt_name_book"
+        android:layout_toLeftOf="@id/card_img"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"
+        android:id="@+id/txt_name_author"
+        android:text="اسم نویسنده"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_color_EBook"
+        android:layout_below="@id/txt_name_author"
+        android:layout_toLeftOf="@id/card_img"
+        android:layout_toRightOf="@id/btn_order"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="12dp"
+        android:id="@+id/description"
+        android:text="@string/bishori_txt"
+        android:maxLines="2"
+        android:lineSpacingExtra="4dp"/>
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/view_bottom_sheet"
+        app:backGroundColor="@color/colorPrimary_EBook"
+        app:initialNumber="1"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="@drawable/bg_btn_buy"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:text="ثبت سفارش"
+        android:textColor="@color/color_other_background"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txt_name_author"
+        android:layout_marginTop="28dp"
+        android:id="@+id/btn_order"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_color_EBook"
+        android:layout_below="@id/card_img"
+        android:layout_marginTop="20dp"
+        android:id="@+id/view_bottom_sheet_2"/>
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_below="@id/view_bottom_sheet_2"
+        android:layout_marginTop="8dp"
+        android:id="@+id/txt_2"
+        android:textColor="@color/text_color_EBook"
+        android:text="برای شما :"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView_bottom_sheet"
+        android:layout_below="@id/txt_2"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>

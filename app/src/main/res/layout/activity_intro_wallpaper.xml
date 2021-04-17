@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/background_wallpaper"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".part04.IntroWallpaperActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager"/>
+
+    <com.google.android.material.tabs.TabLayout
+        app:tabIndicatorHeight="0dp"
+        app:tabBackground="@drawable/tabs_wallpaper_background"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        app:tabPadding="4dp"
+        android:id="@+id/tabs"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"/>
+
+    <TextView
+        android:id="@+id/txt_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="قبلی"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textColor="@color/textColor_wallpaper"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/txt_after"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="بعدی"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textColor="@color/textColor_wallpaper"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="شروع کنید"
+        android:visibility="invisible"
+        android:id="@+id/btn_go"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_btn_go"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:paddingHorizontal="24dp"
+        android:textColor="@color/background_wallpaper"/>
+
+</RelativeLayout>

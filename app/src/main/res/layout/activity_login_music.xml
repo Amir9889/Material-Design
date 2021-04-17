@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_music"
+    android:layoutDirection="rtl"
+    tools:context=".part03.LoginMusicActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/bg_rel_login_music"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_music"
+            app:boxStrokeColor="@color/colorAccent_Music"
+            app:hintTextColor="@color/text_color_music">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="نام کاربری"
+                android:inputType="text"
+                android:paddingRight="8dp"
+                android:textColor="@color/text_color_music"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/text_color_music"
+            app:boxStrokeColor="@color/colorAccent_Music"
+            app:hintTextColor="@color/text_color_music"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/text_color_music">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="رمزعبور"
+                android:inputType="textPassword"
+                android:paddingRight="8dp"
+                android:textColor="@color/text_color_music"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/text_color_music"
+            app:boxStrokeColor="@color/colorAccent_Music"
+            app:hintTextColor="@color/text_color_music">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="موبایل"
+                android:inputType="phone"
+                android:paddingRight="8dp"
+                android:textColor="@color/text_color_music"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <io.ghyeok.stickyswitch.widget.StickySwitch
+            android:layout_marginTop="20dp"
+            app:ss_iconPadding="12dp"
+            android:id="@+id/sticky_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ss_animationDuration="600"
+            app:ss_iconSize="4dp"
+            app:ss_rightIcon="@drawable/ic_baseline_close_24"
+            app:ss_leftIcon="@drawable/ic_baseline_done_all_24"
+            app:ss_sliderBackgroundColor="@color/background_music"
+            app:ss_switchColor="@color/colorAccent_Music"
+            app:ss_animationType="line"/>
+
+        <Button
+            android:background="@drawable/bg_btn_login_music"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="-20dp"
+            android:text="ثبت نام"
+            android:textColor="@color/text_color_music"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        
+        <ImageButton
+            android:id="@+id/img_go"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/bg_go_home_music"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:rotationY="180"
+            app:tint="@color/colorAccent_Music"
+            android:padding="4dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
